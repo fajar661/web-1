@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Laporan Mahasiswa </h1>
+        <nav>
+            <ul>
+                <li class="li-navbar">
+                    <a href="#home" class="a-navbar">Beranda</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="#laporan" class="a-navbar">laporan</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="laporan.html" class="a-navbar">Lihat laporan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Selamat Datang</h2>
+            <p>Website ini dibuat untuk memudahkan para dosen dalam mengajukan pengaduan terhadap mahasiswa.</p>
+        </section>
+        <section id="laporan">
+            <h2>Laporan</h2>
+            <form id="form-laporan">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama"><br><br>
+                <label for="kelas">Kelas:</label>
+                <input type="text" id="kelas" name="kelas"><br><br>
+                <label for="nim">Nim:</label>
+                <input type="nim" id="nim" name="nim"><br><br>
+                <label for="laporan">Laporan:</label>
+                <textarea id="laporan" name="laporan"></textarea><br><br>
+                <button id="kirim-laporan">Kirim Laporan</button>
+            </form>
+        </section>
+        <section id="lihat-laporan">
+            <h2>Lihat Laporan</h2>
+            <div id="daftar-laporan"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Laporan Mahasiswa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
